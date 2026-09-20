@@ -1,7 +1,7 @@
-- TechStore — Consultas Básicas 
+--TechStore — Consultas Básicas 
 -- Autor: [Tamburri Lucas]
 -- Fecha: [20/09/26]
-SELECT DROP TABLE IF EXISTS sales;
+DROP TABLE IF EXISTS sales;
 
 CREATE TABLE sales (
     order_id       INT,
@@ -30,9 +30,10 @@ INSERT INTO sales VALUES (1010, '2024-03-20', 205, 304, 'Teclado Mecánico',   '
 SELECT * FROM sales;-- Si realmente necesitas ver cada rincón de una tabla.
 
 -- Consulta 2: Selección de columnas específicas para finanzas.
-SELECT customer_id,product_id,total_amount FROM sales;
+SELECT customer_id, product_id, total_amount FROM sales;
 
 -- Consulta 3: Selección con alias en español para stakeholders.
 SELECT order_date AS fecha_pedido, product_name AS nombre_producto, quantity AS cantidad_unidades FROM sales;
+
 
 
